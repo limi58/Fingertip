@@ -1,0 +1,33 @@
+{
+  "name": "easy-touch",
+  "version": "1.0.0",
+  "description": "a light weight javascript gestures library",
+  "main": "index.js",
+  "scripts": {
+    "start": "set NODE_ENV=development&&webpack --watch ./src/easy-touch.js ./dist/easy-touch.js",
+    "build": "npm run dev&&npm run min",
+    "dev": "set NODE_ENV=development&&webpack ./src/easy-touch.js ./dist/easy-touch.js",
+    "min": "set NODE_ENV=production&&webpack -p src/easy-touch.js dist/easy-touch.min.js",
+    "test": "node ./test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/limi58/easy-touch.git"
+  },
+  "keywords": [
+    "touch",
+    "gesture"
+  ],
+  "author": "limi58",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/limi58/easy-touch/issues"
+  },
+  "homepage": "https://github.com/limi58/easy-touch#readme",
+  "devDependencies": {
+    "babel-core": "^6.9.1",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "webpack": "^1.13.1"
+  }
+}
